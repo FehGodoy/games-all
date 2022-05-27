@@ -116,13 +116,13 @@ export default function Home() {
               </div>
               <div className="boxAll">                
                 <OwlCarousel className='owl-theme' {...options}>                
-                  { data.map((games)=> (                    
-                    <div className="produto" key={games.id}>
-                      <div className="imagemGame" style={{backgroundImage: `url(${games.background_image})`}}>
+                  { data.map(({id, background_image, name, rating})=> (                    
+                    <div className="produto" key={id}>
+                      <div className="imagemGame" style={{backgroundImage: `url(${background_image})`}}>
                         <div className="information">                          
                           <NavLink to={{                            
-                            pathname:`/single-game/${games.id}`, 
-                            nameGame:games.name                           
+                            pathname:`/single-game/${id}`, 
+                            nameGame:name                           
                             }}>                          
                             <span>
                             <FaInfoCircle/>                            
@@ -130,7 +130,7 @@ export default function Home() {
                           </NavLink>                                                                      
                         </div>
                           <div className="classificacao">
-                            <span> Avaliação <b> {games.rating} </b></span>
+                            <span> Avaliação <b> {rating} </b></span>
                             <span> <FaStar /></span>
                           </div>
                       </div>
