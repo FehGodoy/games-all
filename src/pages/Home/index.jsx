@@ -60,7 +60,7 @@ export default function Home() {
     autoplay: true,    
     smartSpeed: 500,
     autoplayTimeout:2000,    
-    autoplayHoverPause:true,
+    autoplayHoverPause:true,    
     responsive: {
         0: {
             items: 1,

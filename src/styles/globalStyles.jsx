@@ -45,4 +45,17 @@ a{
     --xbox: #00ef00;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--activeColor);
+  border-radius: 10px;
+}
+
 `;
