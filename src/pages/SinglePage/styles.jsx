@@ -374,6 +374,7 @@ height: 100% ;
                             img{
                                 width: 40px ;
                                 margin-left: 10px ;
+                                height:100% ;
                             }
                         }
                     }
