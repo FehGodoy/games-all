@@ -164,7 +164,7 @@ export default function Home() {
                             <span> {name} </span>
                           </div>
                           <div className="atualizacao">
-                            <span>Última atualização: {updated} </span>
+                            <span>Last Update: {updated} </span>
                           </div>
                           <div className="avaliacao">
                               <span>
@@ -213,7 +213,7 @@ export default function Home() {
                       }}> 
                         <div className="imagemGame" style={{backgroundImage: `url(${games.background_image})`}}>
                             <div className="avaliacao">
-                              <span> Avaliação <b> {games.rating} </b> </span><span> <FaStar /></span>
+                              <span> Rating <b> {games.rating} </b> </span><span> <FaStar /></span>
                             </div>
                         </div>
                         </NavLink>
